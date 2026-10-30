@@ -13,7 +13,7 @@ void setup() {
 }
 
 void loop() {
-  if (millis() - prevMillis1 >= 1000) {
+  if (millis() - prevMillis1 >= 500) {
     prevMillis1 = millis();
 
     if (ledState1 == LOW) {
@@ -25,7 +25,7 @@ void loop() {
     digitalWrite(ledPin1, ledState1);
   }
 
-  if (millis() - prevMillis2 >= 2000) {
+  if (millis() - prevMillis2 >= 1000) {
     prevMillis2 = millis();
 
     if (ledState2 == LOW) {
